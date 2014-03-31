@@ -9,7 +9,6 @@ describe Dog do
 
   describe 'association' do
     it 'belongs to an owner' do
-      # expect(dog).to respond_to(:dog_owner)
       dog.save
       expect(dog.owner).to eql(dog_owner)
     end
