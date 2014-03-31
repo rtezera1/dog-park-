@@ -1,0 +1,7 @@
+<li><%= notice %></li>
+<h1> List of Dog Owners </h1>
+<ul>
+  <lu><% @dogowners.each do |dogowner| %></li>
+  <lu><%= link_to dogowner.fullname, dogowner_path(dogowner.id) %></li>
+  <li><% end %></li>
+</ul>

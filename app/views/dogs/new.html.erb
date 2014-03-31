@@ -1,0 +1,17 @@
+<%= form_for @dog do |f| %>
+
+  <div>
+    <%= f.label :owner_id %>
+    <%= f.select :owner_id, @dogowner %>
+  </div>
+
+  <div>
+    <%= f.label :dog_name %>
+    <%= f.text_field :dog_name %>
+  </div>
+
+  <div>
+    <%= f.submit %>
+  </div>
+
+<% end %>

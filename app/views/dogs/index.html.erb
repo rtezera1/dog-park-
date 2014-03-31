@@ -1,0 +1,6 @@
+<h1>List of Dogowners And Dogs</h1>
+<ul>
+  <lu><% @dogs.each do |dog| %></li>
+  <lu><%= "#{dog.owner.fullname} #{dog.dog_name}" %></li>
+  <li><% end %></li>
+</ul>
